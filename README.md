@@ -68,7 +68,7 @@ Additionally, I performed assertions such as verifying the response status code 
    Robot Framework generates detailed, built-in reports and logs, which helps in quick debugging and test result analysis.(I have included my test report at the beginning of this file to showcase its detailed and comprehensive nature. The report is designed to be easily understood by all team members, whether they have technical or non-technical backgrounds.)
 
    * Modularity: 
-   Robot Framework supports the creation of reusable test libraries and keywords, which improves test organization and minimizes code duplication. Its flexibility allows seamless integration with other tools and frameworks, such as Playwright for browser automation, enhancing the overall versatility of the testing process.
+   Robot Framework provides a dedicated mechanism for managing variables, which significantly enhances project modularity and makes it easier to modify test cases when different variables are needed.
 
 
 ## My Project Test Cases:
