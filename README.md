@@ -33,16 +33,19 @@ Follow these steps to set up the project on your machine:
 
 ## Test Approach
 
-The API test cases are located in the TestCases/BackEndTestCases.robot folder and are executed after completing the installation steps outlined earlier. I used the Python requests library to handle API requests within OpenLibraryApi.py. This Python file is then imported into Robot Framework, allowing its methods to be used as steps in my test cases.
+The API test cases are located in the TestCases/BackEndTestCases.robot folder and are executed after completing the installation steps outlined earlier. I used the Python requests library to handle API requests within OpenLibraryApi.py which is located in the ApiResquests/OpenLibraryApi.py. This Python file is then imported into Robot Framework, allowing its methods to be used as steps in my test cases.
 
-To improve modularity and maintainability, I have used variable files to store and manage all variables separately. This approach ensures that any changes to variables can be made quickly and efficiently from a single location, making updates seamless and reducing redundancy across the codebase.
+To improve modularity and maintainability, I have used variables file which is located in ApiResquests/variables.py. to store and manage all variables separately. This approach ensures that any changes to variables can be made quickly and efficiently from a single location, making updates seamless and reducing redundancy across the codebase.
 
+I used the Python requests library, although I was able to accomplish this with Robot Framework's request capabilities. Handling requests within Python offers a cleaner, more concise, and easier-to-understand approach for test cases used in Robot Framework. This method enables more modular and maintainable code, as well as simplifying complex logic.
 
-## 3. Testing with Python requests library and Robot Framework
-  For this project, I chose Python and Robot Framework due to their strengths in test automation and suitability for the project's needs. Here are the reasons behind this decision:
+Additionally, I performed assertions such as verifying the response status code directly within the Python file and provided logging for various details, including URLs, status codes, variables, and response bodies. This logging was enhanced through the use of Robot Framework's robot.libraries.BuiltIn library, which offers keywords for interacting with Robot Framework's built-in capabilities, such as logging, and variable handling. Passing variables between methods is also more straightforward using the Python requests library, enhancing code clarity and reducing potential redundancies when compared to Robot Framework’s direct request handling.
+
+## Testing with Python requests library and Robot Framework
+  For this project, I chose Python requests library and Robot Framework due to their strengths in test automation and suitability for the project's needs. Here are the reasons behind this decision:
    
 
-   **Why Did I Used Python:**
+   **Why Did I Used Python Request Library:**
 
    * Built-In Assertions and Response Handling:
    The requests library allows you to perform assertions directly within the code. This capability lets you inspect and validate various aspects of the response, such as status codes, headers, and response bodies, all within the same script.
