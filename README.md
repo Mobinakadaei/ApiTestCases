@@ -78,14 +78,14 @@ I have added two additional test cases to this project, and I have outlined the 
 **TestCase1: Get a Book Edition Details with ISBN API**
 | Steps        | Expected Result |
 |-------------|-----------------|
-|Call search Api and take ISBN number from that and call ISBN Api with the taken number.| API response must be 200 and publish places must be as expected.|
+|Call search Api and take ISBN number from that and call ISBN Api with the taken number.| API response must be 200 and publish places which is in the ISBN API response must be as expected.|
 
 
 
 **TestCase2: Get a Book Edition Details with Editions API**
 | Steps        | Expected Result |
 |-------------|-----------------|
-|Call search Api and take edition id from that and call edition Api with the taken number.| API response must be 200 and book title must be as expected.|
+|Call search Api and take edition id from that and call edition Api with the taken number.| API response must be 200 and book title which is in the Editions API response must be as expected.|
 
 
 
