@@ -41,7 +41,7 @@ I used the Python requests library, although I was able to accomplish this with 
 
 Additionally, I performed assertions such as verifying the response status code directly within the Python file and provided logging for various details, including URLs, status codes, variables, and response bodies. This logging was enhanced through the use of Robot Framework's robot.libraries.BuiltIn library, which offers keywords for interacting with Robot Framework's built-in capabilities, such as logging, and variable handling. Passing variables between methods is also more straightforward using the Python requests library, enhancing code clarity and reducing potential redundancies when compared to Robot Framework’s direct request handling.
 
-## Testing with Python requests library and Robot Framework
+## Why Choose Robot Framework with the Python Requests Library for Testing
   For this project, I chose Python requests library and Robot Framework due to their strengths in test automation and suitability for the project's needs. Here are the reasons behind this decision:
    
 
